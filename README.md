@@ -138,6 +138,4 @@ The Amnesic Incognito Live System. A security-focused Debian-based Linux distrib
 
 ---
 
-<p align="center">
-  <b>Ventoy Toolkit Manager</b>
-</p>
+
