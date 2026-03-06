@@ -6,11 +6,19 @@
 
 > A professional multiboot USB toolkit for system administrators, developers, and security enthusiasts.
 
-[![Ventoy](https://img.shields.io/badge/Ventoy-1.0.99-blue?logo=ventoy)](https://www.ventoy.net)
-[![Arch Linux](https://img.shields.io/badge/Arch_Linux-Rolling-blue?logo=arch-linux)](https://archlinux.org/)
-[![Kali Linux](https://img.shields.io/badge/Kali_Linux-2025.4-blueviolet?logo=kali-linux)](https://www.kali.org/)
-[![NixOS](https://img.shields.io/badge/NixOS-Declarative-7E7EFF?logo=nixos)](https://nixos.org/)
-[![Privacy](https://img.shields.io/badge/Privacy-Tails-purple?logo=tails)](https://tails.net/)
+<p align="center">
+  <img src="https://img.shields.io/badge/Ventoy-1.0.99-blue?style=for-the-badge&logo=ventoy" alt="Ventoy">
+  <img src="https://img.shields.io/badge/Arch_Linux-Rolling-blue?style=for-the-badge&logo=arch-linux" alt="Arch Linux">
+  <img src="https://img.shields.io/badge/Kali_Linux-2025.4-blueviolet?style=for-the-badge&logo=kali-linux" alt="Kali Linux">
+  <img src="https://img.shields.io/badge/NixOS-Declarative-7E7EFF?style=for-the-badge&logo=nixos" alt="NixOS">
+  <img src="https://img.shields.io/badge/Windows-Recovery-0078D6?style=for-the-badge&logo=windows" alt="Windows">
+  <br>
+  <img src="https://img.shields.io/badge/SystemRescue-Stable-orange?style=for-the-badge&logo=linux" alt="SystemRescue">
+  <img src="https://img.shields.io/badge/Clonezilla-Disk_Imaging-27ae60?style=for-the-badge&logo=linux" alt="Clonezilla">
+  <img src="https://img.shields.io/badge/GParted-Partitioning-orange?style=for-the-badge&logo=linux" alt="GParted">
+  <img src="https://img.shields.io/badge/MemTest86+-Hardware-red?style=for-the-badge&logo=linux" alt="MemTest86+">
+  <img src="https://img.shields.io/badge/Tails-Privacy-purple?style=for-the-badge&logo=tails" alt="Tails">
+</p>
 
 ---
 
@@ -28,7 +36,7 @@
 
 Ta clé est un **multiboot toolkit** ultra-complet permettant de démarrer directement des fichiers ISO sans flashage à chaque utilisation. Elle est organisée pour répondre à tous les besoins : installation d'OS, dépannage Windows, forensic, pentesting et maintenance système.
 
-| Catégorie | Outils |
+| Category | Tools |
 | :--- | :--- |
 | **OS** | Arch Linux, Kali Linux, NixOS |
 | **Windows / Recovery** | Hiren's BootCD PE |
@@ -43,22 +51,22 @@ Ta clé est un **multiboot toolkit** ultra-complet permettant de démarrer direc
 
 ### Primary Systems
 
-| Tool | Description | ISO Filename |
-| :--- | :--- | :--- |
-| **Arch Linux** | Minimalist rolling release distribution. | `archlinux-x86_64.iso` |
-| **Kali Linux** | Offensive security & pentesting (Persistent). | `kali-linux-live.iso` |
-| **NixOS** | Declarative configuration-based OS. | `nixos-graphical-*.iso` |
+| | Tool | Description | ISO Filename |
+| :---: | :--- | :--- | :--- |
+| <img src="assets/arch.png" width="32"> | **Arch Linux** | Minimalist rolling release distribution. | `archlinux-x86_64.iso` |
+| <img src="assets/kali.png" width="32"> | **Kali Linux** | Offensive security & pentesting (Persistent). | `kali-linux-live.iso` |
+| <img src="assets/nixos.png" width="32"> | **NixOS** | Declarative configuration-based OS. | `nixos-graphical-*.iso` |
 
 ### Rescue & Tools
 
-| Tool | Category | Key Features |
-| :--- | :--- | :--- |
-| **Hiren's BootCD PE** | Windows Recovery | Antivirus, Partitioning, Password Reset |
-| **SystemRescue** | Linux Rescue | Boot repair, Filesystem recovery |
-| **Clonezilla** | Disk Imaging | Disk cloning and massive deployment |
-| **GParted** | Partitioning | Live partition editor (resize/move/repair) |
-| **MemTest86+** | RAM Diagnostic | Hardware level memory testing |
-| **Tails** | Privacy | Amnesic OS with Tor integrated |
+| | Tool | Category | Key Features |
+| :---: | :--- | :--- | :--- |
+| <img src="assets/windows.png" width="32"> | **Hiren's BootCD PE** | Windows Recovery | Antivirus, Partitioning, Password Reset |
+| <img src="assets/rescue.png" width="32"> | **SystemRescue** | Linux Rescue | Boot repair, Filesystem recovery |
+| <img src="assets/clonezilla.png" width="32"> | **Clonezilla** | Disk Imaging | Disk cloning and massive deployment |
+| <img src="assets/gparted.png" width="32"> | **GParted** | Partitioning | Live partition editor (resize/move/repair) |
+| <img src="assets/memtest.png" width="32"> | **MemTest86+** | RAM Diagnostic | Hardware level memory testing |
+| <img src="assets/tails.png" width="32"> | **Tails** | Privacy | Amnesic OS with Tor integrated |
 
 ---
 
@@ -67,7 +75,16 @@ Ta clé est un **multiboot toolkit** ultra-complet permettant de démarrer direc
 ```text
 /
 ├── assets/                 # Repository visual assets
-│   └── hero.png
+│   ├── hero.png            # Hub Hero Image
+│   ├── arch.png            # System Logos
+│   ├── kali.png
+│   ├── nixos.png
+│   ├── windows.png
+│   ├── rescue.png
+│   ├── clonezilla.png
+│   ├── gparted.png
+│   ├── memtest.png
+│   └── tails.png
 ├── iso/                    # Main ISO storage
 │   ├── archlinux-x86_64.iso
 │   ├── kali-linux-live.iso
@@ -120,5 +137,5 @@ Ton setup n'est pas qu'une simple liste de fichiers. Il inclut des fonctionnalit
 ---
 
 <p align="center">
-  Generated with by <b>Ventoy Toolkit Manager</b>
+  Generated by <b>Ventoy Toolkit Manager</b>
 </p>
