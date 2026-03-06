@@ -21,6 +21,13 @@ A professional, high-performance multiboot USB toolkit designed for system admin
 
 ---
 
+## Core Components
+
+- [**Ventoy Official Website**](https://www.ventoy.net)
+- [**Ventoy GitHub Repository**](https://github.com/ventoy/Ventoy)
+
+---
+
 ## Project Structure
 
 The toolkit is organized into logical directories to ensure scalability and ease of maintenance.
@@ -140,23 +147,6 @@ The Amnesic Incognito Live System. A security-focused Debian-based Linux distrib
 ![Tails Screenshot](assets/screenshots/tails.png)
 
 ---
-
-## Advanced Features
-
-The toolkit leverages advanced Ventoy capabilities defined in `ventoy.json`:
-
-- **Custom Theme**: Pre-installed "Squid" premium theme for a professional interface.
-- **Icon Support**: Dedicated icons for all operating systems and tools.
-- **Menu Aliases**: Clean, human-readable menu entries for all ISO files.
-- **Kali Persistence**: persistent storage integration for security research.
-- **Structured Navigation**: Logical directory organization (`/rescue`, `/tools`) for clear menu hierarchy.
-
----
-
-## Core Components
-
-- [**Ventoy Official Website**](https://www.ventoy.net)
-- [**Ventoy GitHub Repository**](https://github.com/ventoy/Ventoy)
 
 ---
 
