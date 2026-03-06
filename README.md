@@ -25,6 +25,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
+- [Visual Guide](#visual-guide)
 - [Toolkit Content](#toolkit-content)
 - [Project Structure](#project-structure)
 - [Custom Features](#custom-features)
@@ -44,6 +45,26 @@ Ta clé est un **multiboot toolkit** ultra-complet permettant de démarrer direc
 | **Disk Management** | Clonezilla, GParted |
 | **Hardware Diagnostic** | MemTest86+ |
 | **Privacy & Anonymity** | Tails |
+
+---
+
+## Visual Guide
+
+### Boot Menu & OS
+
+| Ventoy Menu | Arch Linux | Kali Linux |
+| :---: | :---: | :---: |
+| <img src="assets/screenshots/ventoy.png" width="250"> | <img src="assets/screenshots/arch.png" width="250"> | <img src="assets/screenshots/kali.png" width="250"> |
+
+| NixOS | Windows PE | Tails |
+| :---: | :---: | :---: |
+| <img src="assets/screenshots/nixos.png" width="250"> | <img src="assets/screenshots/windows.png" width="250"> | <img src="assets/screenshots/tails.png" width="250"> |
+
+### Utilities
+
+| GParted | Clonezilla | SystemRescue | MemTest86+ |
+| :---: | :---: | :---: | :---: |
+| <img src="assets/screenshots/gparted.png" width="180"> | <img src="assets/screenshots/clonezilla.png" width="180"> | <img src="assets/screenshots/rescue.png" width="180"> | <img src="assets/screenshots/memtest.png" width="180"> |
 
 ---
 
@@ -77,26 +98,10 @@ Ta clé est un **multiboot toolkit** ultra-complet permettant de démarrer direc
 ├── assets/                 # Repository visual assets
 │   ├── hero.png            # Hub Hero Image
 │   ├── arch.png            # System Logos
-│   ├── kali.png
-│   ├── nixos.png
-│   ├── windows.png
-│   ├── rescue.png
-│   ├── clonezilla.png
-│   ├── gparted.png
-│   ├── memtest.png
-│   └── tails.png
+│   ├── ...                 # Other Icons
+│   └── screenshots/        # Tool & OS Screenshots
 ├── iso/                    # Main ISO storage
-│   ├── archlinux-x86_64.iso
-│   ├── kali-linux-live.iso
-│   ├── nixos-graphical.iso
-│   ├── HBCD_PE_x64.iso
-│   ├── rescue/             # Rescue specific ISOs
-│   │   └── systemrescue.iso
-│   └── tools/              # Utilities & Tools
-│       ├── clonezilla.iso
-│       ├── gparted.iso
-│       ├── memtest.iso
-│       └── tails.iso
+│   ├── ...
 └── ventoy/                 # Ventoy configuration
     └── ventoy/
         ├── ventoy.json      # Theme, persistence, and alias config
