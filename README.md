@@ -4,7 +4,7 @@
 
 # Ventoy Toolkit
 
-> A professional multiboot USB toolkit for system administrators, developers, and security enthusiasts.
+A professional, high-performance multiboot USB toolkit designed for system administrators, developers, and security professionals. This repository contains the complete configuration for a modular boot environment, enabling seamless deployment of multiple operating systems, recovery tools, and diagnostic utilities from a single USB drive.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Ventoy-1.0.99-blue?logo=ventoy" alt="Ventoy">
@@ -21,153 +21,142 @@
 
 ---
 
-## Table of Contents
+## Project Structure
 
-- [Overview](#overview)
-- [Visual Guide](#visual-guide)
-- [Toolkit Content](#toolkit-content)
-- [Project Structure](#project-structure)
-- [Custom Features](#custom-features)
-- [Official Links](#official-links)
+The toolkit is organized into logical directories to ensure scalability and ease of maintenance.
 
----
-
-## Overview
-
-Ta clé est un **multiboot toolkit** ultra-complet permettant de démarrer directement des fichiers ISO sans flashage à chaque utilisation. Elle est organisée pour répondre à tous les besoins : installation d'OS, dépannage Windows, forensic, pentesting et maintenance système.
-
----
-
-## Visual Guide
-
-### Primary Operating Systems
-Les systèmes d'exploitation mobiles et robustes prêts à l'emploi.
-
-#### Arch Linux
-![Arch Linux](assets/screenshots/arch.png)
-
-#### Kali Linux
-![Kali Linux](assets/screenshots/kali.png)
-
-#### NixOS
-![NixOS](assets/screenshots/nixos.png)
-
-### Recovery & Specialized Tools
-Outils de diagnostic, partitionnement et maintenance.
-
-#### Windows PE (Hiren's BootCD)
-![Windows PE](assets/screenshots/windows.png)
-
-#### Tails (Privacy)
-![Tails](assets/screenshots/tails.png)
-
-#### GParted
-![GParted](assets/screenshots/gparted.png)
-
-#### Clonezilla
-![Clonezilla](assets/screenshots/clonezilla.png)
-
-#### SystemRescue
-![SystemRescue](assets/screenshots/rescue.png)
-
-#### MemTest86+
-![MemTest86+](assets/screenshots/memtest.png)
+```text
+/
+├── assets/                 # Repository visual assets and logos
+│   └── screenshots/        # Tool and OS environment captures
+├── iso/                    # ISO storage directory
+│   ├── rescue/             # Specialized recovery environments
+│   └── tools/              # Utility-focused distributions
+└── ventoy/                 # Ventoy core configuration
+    └── ventoy/
+        ├── ventoy.json      # Global settings, persistence, and aliases
+        └── theme/           # Custom GRUB boot theme (Squid)
+```
 
 ---
 
 ## Toolkit Content
 
-### Primary Systems
+### Primary Operating Systems
 
-**Arch Linux**
-Minimalist rolling release distribution.
-`archlinux-x86_64.iso`
+#### <img src="assets/arch.png" width="24"> Arch Linux
+A minimalist, lightweight, and highly customizable Linux distribution. Ideal for power users who require a lean environment.
 
-**Kali Linux**
-Offensive security & pentesting (Persistent).
-`kali-linux-live.iso`
+- **ISO**: `archlinux-x86_64.iso`
+- **Documentation**: [Official Wiki](https://wiki.archlinux.org/)
+- **Download**: [Official Release](https://archlinux.org/download/)
 
-**NixOS**
-Declarative configuration-based OS.
-`nixos-graphical-*.iso`
-
-### Rescue & Tools
-
-**Hiren's BootCD PE**
-Windows Recovery environment with Antivirus, Partitioning, and Password Reset tools.
-
-**SystemRescue**
-Linux Rescue toolkit for boot repair and filesystem recovery.
-
-**Clonezilla**
-Disk Imaging tool for cloning and massive deployment.
-
-**GParted**
-Live partition editor for resizing,moving, and repairing partitions.
-
-**MemTest86+**
-Hardware level memory testing utility.
-
-**Tails**
-Amnesic OS with Tor integrated for ultimate privacy.
+![Arch Linux Screenshot](assets/screenshots/arch.png)
 
 ---
 
-## Project Structure
+#### <img src="assets/kali.png" width="24"> Kali Linux
+The professional standard for advanced Penetration Testing and Security Auditing. Configured with a dedicated persistence file.
 
-```text
-/
-├── assets/                 # Repository visual assets
-│   ├── hero.png            # Hub Hero Image
-│   └── screenshots/        # Tool & OS Screenshots
-├── iso/                    # Main ISO storage
-│   ├── archlinux-x86_64.iso
-│   ├── kali-linux-live.iso
-│   ├── nixos-graphical.iso
-│   ├── HBCD_PE_x64.iso
-│   ├── rescue/
-│   │   └── systemrescue.iso
-│   └── tools/
-│       ├── clonezilla.iso
-│       ├── gparted.iso
-│       ├── memtest.iso
-│       └── tails.iso
-└── ventoy/                 # Ventoy configuration
-    └── ventoy/
-        ├── ventoy.json      # Theme, persistence, and alias config
-        └── theme/           # Custom GRUB theme
-```
+- **ISO**: `kali-linux-live.iso`
+- **Persistence**: `kali-persistence.dat`
+- **Documentation**: [Official Docs](https://www.kali.org/docs/)
+- **Download**: [Get Kali](https://www.kali.org/get-kali/)
+
+![Kali Linux Screenshot](assets/screenshots/kali.png)
 
 ---
 
-## Custom Features
+#### <img src="assets/nixos.png" width="24"> NixOS
+A declarative Linux distribution built on the Nix package manager, offering reproducible builds and reliable rollbacks.
 
-Ton setup n'est pas qu'une simple liste de fichiers. Il inclut des fonctionnalités avancées configurées dans `ventoy.json` :
+- **ISO**: `nixos-graphical-*.iso`
+- **Documentation**: [Official Manual](https://nixos.org/manual/)
+- **Download**: [NixOS Download](https://nixos.org/download.html)
 
-- **Custom Theme** : Thème "Squid" premium pré-installé.
-- **Custom Icons** : Icônes dédiées pour chaque OS (Arch, Kali, NixOS, Windows).
-- **Menu Aliases** : Noms de fichiers ISO renommés proprement dans le menu de boot.
-- **Kali Persistence** : Sauvegarde tes modifications sur Kali (`kali-persistence.dat`).
-- **Logic Organization** : Dossiers `/rescue` et `/tools` pour un menu propre.
+![NixOS Screenshot](assets/screenshots/nixos.png)
 
 ---
 
-## Official Links
+### Recovery & Specialized Tools
 
-### OS & ISOs
-- [**Arch Linux**](https://archlinux.org/download/) - [Doc](https://wiki.archlinux.org/)
-- [**Kali Linux**](https://www.kali.org/get-kali/) - [Doc](https://www.kali.org/docs/)
-- [**NixOS**](https://nixos.org/download.html) - [Doc](https://nixos.org/manual/)
-- [**Hiren's BootCD PE**](https://www.hirensbootcd.org/download/)
-- [**SystemRescue**](https://www.system-rescue.org/Download/)
-- [**Clonezilla**](https://clonezilla.org/downloads.php/)
-- [**GParted**](https://gparted.org/download.php)
-- [**MemTest86+**](https://memtest.org/)
-- [**Tails**](https://tails.net/install/) - [Doc](https://tails.net/doc/)
+#### <img src="assets/windows.png" width="24"> Hiren's BootCD PE
+A Windows 10 PE based emergency boot disk loaded with recovery tools, partitioning software, and antivirus utilities.
 
-### Bootloader
+- **ISO**: `HBCD_PE_x64.iso`
+- **Download**: [HBCD Official Website](https://www.hirensbootcd.org/download/)
+
+![Windows PE Screenshot](assets/screenshots/windows.png)
+
+---
+
+#### <img src="assets/rescue.png" width="24"> SystemRescue
+A Linux system rescue disk available as a bootable CD-ROM or USB stick for administrating or repairing your system and data after a crash.
+
+- **ISO**: `iso/rescue/systemrescue.iso`
+- **Download**: [SystemRescue Download](https://www.system-rescue.org/Download/)
+
+![SystemRescue Screenshot](assets/screenshots/rescue.png)
+
+---
+
+#### <img src="assets/clonezilla.png" width="24"> Clonezilla
+A partition and disk imaging/cloning program similar to Symantec Ghost. Perfect for system backup and massive deployment.
+
+- **ISO**: `iso/tools/clonezilla.iso`
+- **Download**: [Clonezilla Downloads](https://clonezilla.org/downloads.php/)
+
+![Clonezilla Screenshot](assets/screenshots/clonezilla.png)
+
+---
+
+#### <img src="assets/gparted.png" width="24"> GParted
+A free partition editor for graphically managing your disk partitions. Resize, copy, and move partitions without data loss.
+
+- **ISO**: `iso/tools/gparted.iso`
+- **Download**: [GParted Download](https://gparted.org/download.php)
+
+![GParted Screenshot](assets/screenshots/gparted.png)
+
+---
+
+#### <img src="assets/memtest.png" width="24"> MemTest86+
+An open-source standalone memory tester for x86 and x86-64 architecture computers.
+
+- **ISO**: `iso/tools/memtest.iso`
+- **Download**: [MemTest86+ Website](https://memtest.org/)
+
+![MemTest86+ Screenshot](assets/screenshots/memtest.png)
+
+---
+
+#### <img src="assets/tails.png" width="24"> Tails
+The Amnesic Incognito Live System. A security-focused Debian-based Linux distribution aimed at preserving privacy and anonymity.
+
+- **ISO**: `iso/tools/tails.iso`
+- **Documentation**: [Tails Documentation](https://tails.net/doc/)
+- **Download**: [Install Tails](https://tails.net/install/)
+
+![Tails Screenshot](assets/screenshots/tails.png)
+
+---
+
+## Advanced Features
+
+The toolkit leverages advanced Ventoy capabilities defined in `ventoy.json`:
+
+- **Custom Theme**: Pre-installed "Squid" premium theme for a professional interface.
+- **Icon Support**: Dedicated icons for all operating systems and tools.
+- **Menu Aliases**: Clean, human-readable menu entries for all ISO files.
+- **Kali Persistence**: persistent storage integration for security research.
+- **Structured Navigation**: Logical directory organization (`/rescue`, `/tools`) for clear menu hierarchy.
+
+---
+
+## Core Components
+
 - [**Ventoy Official Website**](https://www.ventoy.net)
-- [**Ventoy GitHub**](https://github.com/ventoy/Ventoy)
+- [**Ventoy GitHub Repository**](https://github.com/ventoy/Ventoy)
 
 ---
 
