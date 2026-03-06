@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.png" alt="Ventoy Toolkit Hero" width="800">
+  <img src="assets/screenshots/ventoy.png" alt="Ventoy Toolkit Hero" width="800">
 </p>
 
 # Ventoy Toolkit
@@ -39,11 +39,6 @@ Ta clé est un **multiboot toolkit** ultra-complet permettant de démarrer direc
 ---
 
 ## Visual Guide
-
-### Ventoy Boot Menu
-Le point d'entrée de ton toolkit avec le thème personnalisé.
-
-![Ventoy Menu](assets/screenshots/ventoy.png)
 
 ### Primary Operating Systems
 Les systèmes d'exploitation mobiles et robustes prêts à l'emploi.
