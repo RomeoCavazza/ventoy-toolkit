@@ -1,0 +1,42 @@
+================================================================================
+ventoy-toolkit — Technical Specification & Structure Dictionary
+================================================================================
+
+--------------------------------------------------------------------------------
+1. Partitioning & Boot Logic
+--------------------------------------------------------------------------------
+Structure Pattern
+  Modular Multiboot: Separation of assets, bootable images, and configuration.
+
+Ventoy Configuration (ventoy/ventoy/)
+  ventoy.json: Core settings logic.
+    - persistence: Maps images to .dat files (e.g., Kali).
+    - auto_install: Unattended install scripts.
+    - alias: Human-readable names for complex filenames.
+  theme/: Squid GRUB theme for visual consistency at boot.
+
+--------------------------------------------------------------------------------
+2. Image Management (iso/)
+--------------------------------------------------------------------------------
+rescue/
+  Critical recovery tools (SystemRescue, Hiren's BootCD).
+
+tools/
+  Utility-focused images (Clonezilla, GParted, MemTest86+).
+
+Operating Systems
+  Primary OS images (Arch, Kali, NixOS, Windows).
+
+--------------------------------------------------------------------------------
+3. Visual Assets (assets/)
+--------------------------------------------------------------------------------
+Repository Identity
+  screenshots/: Proof of work and environment captures.
+  logos/: Iconography for major tool families.
+
+--------------------------------------------------------------------------------
+4. Deployment
+--------------------------------------------------------------------------------
+Requirements
+  - Ventoy-formatted USB drive (GPT recommended).
+  - Minimum 32GB storage for the full toolkit content.

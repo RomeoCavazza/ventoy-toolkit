@@ -24,6 +24,9 @@ A professional, high-performance multiboot USB toolkit designed for system admin
 
 The toolkit is organized into logical directories to ensure scalability and ease of maintenance.
 
+> [!IMPORTANT]
+> For details on persistence mapping, theme configuration, and code statistics, refer to the [Technical Documentation Portal](docs/README.md).
+
 ```text
 /
 ├── assets/                 # Repository visual assets and logos
