@@ -38,12 +38,10 @@
     { "key": "archlinux", "class": "arch" },
     { "key": "kali", "class": "kali" },
     { "key": "nixos", "class": "nixos" },
-    { "key": "HBCD", "class": "windows" },
-    { "key": "windows", "class": "windows" },
-
+    { "key": "HBCD", "class": "windows-pe" },
+    { "key": "Win11", "class": "windows" },
     { "key": "rescue", "class": "rescue" },
     { "key": "systemrescue", "class": "rescue" },
-
     { "key": "tools", "class": "type" },
     { "key": "clonezilla", "class": "clonezilla" },
     { "key": "gparted", "class": "gparted" },
@@ -65,7 +63,11 @@
     },
     {
       "image": "/iso/HBCD_PE_x64.iso",
-      "alias": "Windows"
+      "alias": "Windows PE"
+    },
+    {
+      "image": "/iso/Win11_25H2_French_x64_v2.iso",
+      "alias": "Windows 11"
     },
     {
       "image": "/iso/rescue/systemrescue.iso",
