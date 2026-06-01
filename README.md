@@ -84,6 +84,8 @@ The latest major release of Microsoft's operating system. Included for system de
 - **Documentation**: [Official Docs](https://learn.microsoft.com/en-us/windows/)
 - **Download**: [Windows 11 Download](https://www.microsoft.com/software-download/windows11)
 
+![Windows 11 Screenshot](assets/screenshots/windows.png)
+
 ---
 
 ### Recovery & Specialized Tools
