@@ -77,6 +77,15 @@ A declarative Linux distribution built on the Nix package manager, offering repr
 
 ---
 
+#### <img src="assets/windows.png" width="24"> Windows 11
+The latest major release of Microsoft's operating system. Included for system deployment, recovery, and dual-boot configuration.
+
+- **ISO**: `Win11_25H2_French_x64_v2.iso`
+- **Documentation**: [Official Docs](https://learn.microsoft.com/en-us/windows/)
+- **Download**: [Windows 11 Download](https://www.microsoft.com/software-download/windows11)
+
+---
+
 ### Recovery & Specialized Tools
 
 #### <img src="assets/windows.png" width="24"> Hiren's BootCD PE
